@@ -10,15 +10,9 @@
     <modules>
         <module>microservicecloud-api</module>
         <module>microservicecloud-provider-dept-8001</module>
+        <module>microservicecloud-consumer-dept-80</module>
+        <module>microservicecloud-eureka-7001</module>
     </modules>
-    <dependencies>
-        <dependency>
-            <groupId>com.lc</groupId>
-            <artifactId>microservicecloud-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
     <packaging>pom</packaging>
 
     <properties>
@@ -42,14 +36,14 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.0.RELEASE</version>
+                <version>1.5.19.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.0.4</version>
+                <version>5.1.9</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -81,12 +75,7 @@
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
-                <version>RELEASE</version>
-            </dependency>
-            <!--mybatis通用mapper-->
-            <dependency>
-                <groupId>tk.mybatis</groupId>
-                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>2.1.5</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

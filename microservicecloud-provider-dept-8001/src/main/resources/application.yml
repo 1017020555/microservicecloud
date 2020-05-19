@@ -5,14 +5,14 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
-    password: offcn
-    url: jdbc:mysql://localhost:3306/cloudDB01
+    password: 123456
+    url: jdbc:mysql://localhost:3306/clouddb01
   application:
     name: microservicecloud-dept
 
 #通用mapper的配置
 mapper:
-  mappers: com.lc.cn.mapper
+  mappers: com.lc.cn.mapper.DeptMapper
   identity: mysql
   not-empty: false
 
