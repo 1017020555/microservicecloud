@@ -19,3 +19,15 @@ mapper:
 logging:
   level:
     com.lc.cn.mapper : debug
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-dept8001
+    prefer-ip-address: true   #访问路径显示IP地址
+info:
+  app.name: offcn-microservicecloud
+  company.name: www.lc.cn
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
