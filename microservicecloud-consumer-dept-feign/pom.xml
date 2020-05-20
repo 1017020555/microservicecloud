@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-consumer-dept-80</artifactId>
+    <artifactId>microservicecloud-consumer-dept-feign</artifactId>
     <packaging>war</packaging>
 
-    <name>microservicecloud-consumer-dept-80 Maven Webapp</name>
+    <name>microservicecloud-consumer-dept-feign Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -23,7 +23,10 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
         <!-- Ribbon相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -32,15 +35,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -71,7 +65,7 @@
     </dependencies>
 
     <build>
-        <finalName>microservicecloud-consumer-dept-80</finalName>
+        <finalName>microservicecloud-consumer-dept-feign</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
