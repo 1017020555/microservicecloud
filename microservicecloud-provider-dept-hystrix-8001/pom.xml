@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-provider-dept-8001</artifactId>
+    <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
     <packaging>war</packaging>
 
-    <name>microservicecloud-provider-dept-8001 Maven Webapp</name>
+    <name>microservicecloud-provider-dept-hystrix-8001 Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -24,6 +24,10 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
         <!-- actuator监控信息完善 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -78,10 +82,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework</groupId>-->
-<!--            <artifactId>springloaded</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework</groupId>-->
+        <!--            <artifactId>springloaded</artifactId>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -131,3 +135,4 @@
         </pluginManagement>
     </build>
 </project>
+
